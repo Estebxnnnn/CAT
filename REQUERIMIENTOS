@@ -1,0 +1,41 @@
+Funcionales:
+RF1. Registro y gestión de solicitudes de soporte:
+El sistema debe permitir que los usuarios (estudiantes, docentes y administrativos) registren nuevas solicitudes, indicando información como tipo de problema, descripción, prioridad sugerida y datos de contacto.
+Además, debe permitir editar o complementar la información antes de su asignación.
+
+RF2. Asignación de solicitudes a técnicos:
+El sistema debe permitir que el coordinador del CAT asigne manualmente una solicitud a un técnico disponible o re-asignarla cuando sea necesario.
+Debe registrarse automáticamente la fecha, hora y responsable de la asignación.
+
+RF3. Actualización del estado de las solicitudes:
+El sistema debe permitir que los técnicos actualicen el estado de una solicitud (registrada, en proceso, resuelta, cancelada), añadiendo comentarios u observaciones que queden registradas en un historial.
+Los cambios deben ser visibles al usuario solicitante.
+
+RF4. Consulta de solicitudes por parte de los usuarios:
+El sistema debe permitir que los usuarios consulten el estado actual de sus solicitudes, así como acceder a un historial completo de requerimientos pasados, incluyendo fechas, técnicos responsables y soluciones aplicadas.
+
+RF5. Generación de reportes y métricas de desempeño:
+El sistema debe generar reportes para el coordinador del CAT, incluyendo cantidad de solicitudes por período, tiempos de resolución, cargas de trabajo por técnico y solicitudes por prioridad.
+Debe permitir exportar estos reportes en formatos estándar (PDF, CSV o XLSX).
+
+No Funcionales:
+
+RNF1. Usabilidad:
+La interfaz del sistema debe ser intuitiva, consistente y accesible para usuarios con conocimientos técnicos básicos.
+El tiempo promedio de aprendizaje no debe superar los 15 minutos para un usuario nuevo.
+
+RNF2. Seguridad y control de acceso:
+El sistema debe implementar autenticación con roles (solicitante, técnico, coordinador) y asegurar que cada perfil acceda únicamente a las funcionalidades permitidas.
+Toda la información sensible debe estar protegida mediante cifrado en tránsito (HTTPS).
+
+RNF3. Disponibilidad:
+El sistema debe estar disponible al menos el 99% del tiempo, excepto en ventanas programadas de mantenimiento.
+Deben implementarse mecanismos de respaldo diario de la información.
+
+RNF4. Rendimiento:
+El sistema debe permitir la carga y visualización de solicitudes en menos de 2 segundos, incluso con más de 5.000 registros almacenados.
+Las operaciones de filtrado o búsqueda no deben superar los 3 segundos.
+
+RNF5. Escalabilidad:
+El sistema debe soportar aumentos en la cantidad de usuarios y solicitudes sin degradación significativa del rendimiento.
+Debe permitir la integración con servicios externos en el futuro (correo institucional, notificaciones push, etc.).
